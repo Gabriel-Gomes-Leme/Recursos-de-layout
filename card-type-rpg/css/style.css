@@ -62,6 +62,9 @@ body{
 .card:nth-child(3):hover .card-content h2{
     color: orangered;
 }
+.card:hover{
+    transform: rotateZ(10deg);
+}
 .card-content p{
     font-size: 1.1rem;
     color: darkslategray;
