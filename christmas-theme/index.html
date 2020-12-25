@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1 class="titulo"> Merry Christmas!</h1>
+    <div class="container">
+        <div class="hexagon">
+            <img src="img/natal.jpg">
+            <div class="content">
+                <div>
+                    <h2>Merry Christmas</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <img src="img/natal2.jpg">
+            <div class="content">
+                <div>
+                    <h2>Merry Christmas</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <img src="img/natal3.jpg">
+            <div class="content">
+                <div>
+                    <h2>Merry Christmas</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function flocos(){
+            const count=400
+            var body=document.querySelector('body')
+            var i=0
+            while(i<count){
+                var flocos=document.createElement('f')
+                var x=Math.floor(Math.random() * window.innerWidth)
+                var y=Math.floor(Math.random() * window.innerHeight)
+                var size=Math.random() * 10
+                flocos.style.left=x + 'px'
+                flocos.style.top=y + 'px'
+                flocos.style.width= 1 + size + 'px'
+                flocos.style.height=1 + size + 'px'
+
+                body.appendChild(flocos)
+                i++
+            }
+        }
+        flocos()
+    </script>
+</body>
+</html>
